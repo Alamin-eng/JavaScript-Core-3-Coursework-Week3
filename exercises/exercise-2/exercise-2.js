@@ -70,3 +70,21 @@ let hogwarts = [
     occupation: "Teacher",
   },
 ];
+
+// Code - 
+function membersAndPet(hogwarts){
+  console.log("Gryffindor House Members :")
+for (let{firstName:fName,lastName:lName, house:house,pet:petType, 
+  occupation:occupationType} of hogwarts){
+    if(house.toLowerCase() === "Gryffindor".toLowerCase()){
+     console.log(`- ${fName} ${lName}`)
+    }
+    if(occupationType.toLowerCase() === 'Teacher'.toLowerCase() && petType !== null){
+      console.log(`\nTeacher who owns a pet - ${fName} ${lName}`)
+    }
+}
+}
+// function called
+membersAndPet(hogwarts)
+
+

@@ -14,7 +14,8 @@ Take a look at the following code:
 7    console.log(x);
 ```
 
-Explain why line 4 and line 6 output different numbers.
+Explain why line 4 and line 6 output different numbers. 
+Ans: line 1 x is a global variable and line 4 x is local variable
 
 ## Question 2
 
@@ -34,6 +35,7 @@ console.log(y)
 ```
 
 What will be the output of this code. Explain your answer in 50 words or less.
+Ans: will print 10 for the function's console.log(x) because x is global variable, but will print undefined for console.log(f1()) because function is not returning anything, and will also throw an error mentioning y is not defined because variable y is locally scopped inside function
 
 ## Question 3
 
@@ -48,7 +50,7 @@ function f1(val) {
 }
 
 f1(x);
-console.log(x);
+console.log(x); 
 
 const y = { x: 9 };
 
@@ -62,3 +64,4 @@ console.log(y);
 ```
 
 What will be the output of this code. Explain your answer in 50 words or less.
+Ans: console.log(x); will print out 9 and console.log(y) will print { x: 9 } because they are both global variables and their values is never altered
