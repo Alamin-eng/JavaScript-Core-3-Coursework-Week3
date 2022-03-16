@@ -18,7 +18,7 @@ console.log(`----\t-----\t\t------`)
 for(let{quantity:quantitys,itemName:itemName,unitPrice:unit,total} of item){
   total = (quantitys * unit).toFixed(2)
   receiptTotalarr.push(Number(total))
-  console.log(`${index++}\t${itemName}\t${total}`)
+  console.log(`${quantitys}\t${itemName}\t${total}`)
 }
 let receiptTotal = receiptTotalarr.reduce((a,b) => a + b)
 console.log(`\nTotal -\t${receiptTotal}`)
